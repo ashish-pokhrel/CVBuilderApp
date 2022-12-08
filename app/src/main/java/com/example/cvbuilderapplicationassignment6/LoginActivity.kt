@@ -78,6 +78,8 @@ class LoginActivity : AppCompatActivity(), OnClickListener {
                     }
                 }
             }
+
+            
         }
     }
 
