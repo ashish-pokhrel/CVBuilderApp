@@ -15,7 +15,7 @@ import com.example.cvbuilderapplicationassignment6.constants.Constant.USER_EMAIL
 import com.example.cvbuilderapplicationassignment6.constants.Constant.USER_NAME
 import com.example.cvbuilderapplicationassignment6.constants.Constant.USER_PASSWORD
 
-class LoginActivity : AppCompatActivity(), OnClickListener {
+class LoginAct : AppCompatActivity(), OnClickListener {
 
     private lateinit var emailEditText: EditText
     private lateinit var passwordEditText: EditText
@@ -44,7 +44,7 @@ class LoginActivity : AppCompatActivity(), OnClickListener {
     }
 
     private fun openMainActivity() {
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, MainAct::class.java)
         startActivity(intent)
         finish()
     }

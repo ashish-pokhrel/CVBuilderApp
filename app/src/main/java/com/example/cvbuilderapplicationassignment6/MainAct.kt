@@ -1,13 +1,10 @@
 package com.example.cvbuilderapplicationassignment6
 
 import android.Manifest
-import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
@@ -18,7 +15,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 
 
-class MainActivity : AppCompatActivity() {
+class MainAct : AppCompatActivity() {
 
     val REQUEST_ID_MULTIPLE_PERMISSIONS = 400
 
@@ -99,14 +96,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun checkAndRequestPermissions(): Boolean {
-        val call = ContextCompat.checkSelfPermission(this@MainActivity, Manifest.permission.CALL_PHONE)
+        val call = ContextCompat.checkSelfPermission(this@MainAct, Manifest.permission.CALL_PHONE)
         val listPermissionsNeeded = ArrayList<String>()
         if (call != PackageManager.PERMISSION_GRANTED) {
             listPermissionsNeeded.add(Manifest.permission.CALL_PHONE)
         }
 
         if (!listPermissionsNeeded.isEmpty()) {
-            ActivityCompat.requestPermissions(this@MainActivity, listPermissionsNeeded.toTypedArray(), REQUEST_ID_MULTIPLE_PERMISSIONS)
+            ActivityCompat.requestPermissions(this@MainAct, listPermissionsNeeded.toTypedArray(), REQUEST_ID_MULTIPLE_PERMISSIONS)
             return false
         }
         return true
@@ -132,7 +129,7 @@ class MainActivity : AppCompatActivity() {
                         print("Storage permissions are required")
 
                     } else {
-                        if (ActivityCompat.shouldShowRequestPermissionRationale(this@MainActivity, Manifest.permission.WRITE_EXTERNAL_STORAGE) || ActivityCompat.shouldShowRequestPermissionRationale(this@MainActivity, Manifest.permission.CAMERA) || ActivityCompat.shouldShowRequestPermissionRationale(this@MainActivity, Manifest.permission.READ_EXTERNAL_STORAGE) || ActivityCompat.shouldShowRequestPermissionRationale(this@MainActivity, Manifest.permission.ACCESS_FINE_LOCATION)) {
+                        if (ActivityCompat.shouldShowRequestPermissionRationale(this@MainAct, Manifest.permission.WRITE_EXTERNAL_STORAGE) || ActivityCompat.shouldShowRequestPermissionRationale(this@MainAct, Manifest.permission.CAMERA) || ActivityCompat.shouldShowRequestPermissionRationale(this@MainAct, Manifest.permission.READ_EXTERNAL_STORAGE) || ActivityCompat.shouldShowRequestPermissionRationale(this@MainAct, Manifest.permission.ACCESS_FINE_LOCATION)) {
                             showDialogOK("Call  permission is required for this app",
                                 DialogInterface.OnClickListener { dialog, which ->
                                     when (which) {
@@ -142,7 +139,7 @@ class MainActivity : AppCompatActivity() {
                                     }
                                 })
                         } else {
-                            Toast.makeText(this@MainActivity, "Go to settings and enable permissions", Toast.LENGTH_LONG)
+                            Toast.makeText(this@MainAct, "Go to settings and enable permissions", Toast.LENGTH_LONG)
                                 .show()
 
                         }
@@ -154,7 +151,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showDialogOK(message: String, okListener: DialogInterface.OnClickListener) {
-        AlertDialog.Builder(this@MainActivity)
+        AlertDialog.Builder(this@MainAct)
             .setMessage(message)
             .setPositiveButton("OK", okListener)
             .setNegativeButton("Cancel", okListener)

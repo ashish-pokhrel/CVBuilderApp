@@ -47,17 +47,19 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 
-    //Circular Image View
-    implementation 'de.hdodenhof:circleimageview:3.1.0'
 
-    //CardView
-    implementation "androidx.cardview:cardview:1.0.0"
-
-    //Recycler View
+    //For Recycler View
     implementation "androidx.recyclerview:recyclerview:1.2.1"
     implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
 
-    //Glide
+    //For Glide
     implementation 'com.github.bumptech.glide:glide:4.14.2'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+
+    //Image View For Circular
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //ForCardView
+    implementation "androidx.cardview:cardview:1.0.0"
+
 }

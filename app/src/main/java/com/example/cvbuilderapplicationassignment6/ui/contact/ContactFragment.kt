@@ -9,7 +9,7 @@ import android.view.View.OnClickListener
 import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.example.cvbuilderapplicationassignment6.MyWebActivity
+import com.example.cvbuilderapplicationassignment6.WebAct
 import com.example.cvbuilderapplicationassignment6.R
 
 
@@ -60,7 +60,7 @@ class ContactFragment : Fragment(R.layout.fragment_contact), OnClickListener {
     }
 
     private fun openWebUrl(url: String) {
-        val intent = Intent(requireActivity(), MyWebActivity::class.java)
+        val intent = Intent(requireActivity(), WebAct::class.java)
         intent.putExtra("url",url)
         requireContext().startActivity(intent)
     }

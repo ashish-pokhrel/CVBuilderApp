@@ -17,7 +17,7 @@ data class Education(
                 Education(
                     "Apex College",
                     "Bachelor's in Computer Information System",
-                    "https://apexcollege.edu.np/https://apexcollege.edu.np/storage/settings/logo.png"
+                    "https://th.bing.com/th/id/R.5c3886073ddb8f65ea30be4ea3af4a90?rik=47bruLr6ElYaCw&pid=ImgRaw&r=0"
                 )
             )
         }

@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.webkit.WebView
 import android.webkit.WebViewClient
 
-class MyWebActivity : AppCompatActivity() {
+class WebAct : AppCompatActivity() {
 
     private lateinit var webView: WebView
 

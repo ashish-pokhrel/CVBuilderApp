@@ -16,7 +16,7 @@ data class Work(
                     "Feb 2019",
                     "Dec 2022",
                     "ktm, Nepal",
-                    "",
+                    "https://th.bing.com/th/id/OIP.tEnCZz4MHn_k3xqn12snlwAAAA?pid=ImgDet&rs=1",
                     "Software Engineer"
                 ),
                 Work(

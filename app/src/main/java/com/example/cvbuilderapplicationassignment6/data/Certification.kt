@@ -8,12 +8,12 @@ data class Certification(
         fun getCertificateList(): MutableList<Certification> {
             return mutableListOf(
                 Certification(
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/872px-Android_robot.svg.png",
-                    "Android Development Training"
+                    "https://attackofthefanboy.com/wp-content/uploads/2014/07/Microsoft-Logo.jpg",
+                    "Microsoft Cloud Fundamental"
                 ),
                 Certification(
-                    "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
-                    "Git and GitHub Workshop"
+                    "https://i.ytimg.com/vi/NP_5LHuZTo8/maxresdefault.jpg",
+                    "Git and GitHub"
                 )
             )
         }
