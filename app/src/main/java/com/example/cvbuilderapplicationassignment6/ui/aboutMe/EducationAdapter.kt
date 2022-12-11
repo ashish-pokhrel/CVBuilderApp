@@ -10,6 +10,7 @@ import com.bumptech.glide.Glide
 import com.example.cvbuilderapplicationassignment6.R
 import com.example.cvbuilderapplicationassignment6.data.Education
 
+
 class EducationAdapter(
     private val educationList: MutableList<Education> = mutableListOf()
 ) : RecyclerView.Adapter<EducationAdapter.EducationViewHolder>(){
